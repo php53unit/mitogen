@@ -1229,7 +1229,7 @@ class Broker(mitogen.core.Broker):
         particular, alternative Python implementations may not be able to
         support watching the main thread.
     """
-    shutdown_timeout = 5.0
+    shutdown_timeout = 15.0
     _watcher = None
     poller_class = mitogen.parent.PREFERRED_POLLER
 
